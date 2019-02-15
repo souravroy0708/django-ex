@@ -16,8 +16,7 @@ def index(request):
         file_path = request.GET.get("file_path","/var/run/secrets/kubernetes.io/serviceaccount/namespace")
         print("file_path : ",file_path)
         f = open(file_path,"rb")
-        print("gggg am")
-        print(f.read())
+        print("File Content ggg : ",f.read())
     except Exception as Exc:
         print(Exc)
 
